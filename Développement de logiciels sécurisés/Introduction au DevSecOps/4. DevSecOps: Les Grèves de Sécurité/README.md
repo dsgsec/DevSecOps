@@ -1,14 +1,14 @@
 DevSecOps est une approche qui repose fortement sur automatisation et conception de plate-forme qui intègre la sécurité en tant que partage responsabilité. C'est un style de développement axé sur la culture qui normalise la sécurité comme une opération quotidienne.
 
-Quelle est la valeur?
+### Quelle est la valeur?
 
 DevSecOps aide à faire tomber vulnérabilités, maximise la couverture des tests et intensifie l'automatisation des cadres sécurité. Cela réduit considérablement les risques, aidant les organisations à prévenir les dommages à la réputation de la marque et les pertes économiques dues aux incidents de failles de sécurité, facilitant ainsi l'audit et la surveillance.
 
-Comment mettre en œuvre cela efficacement?
+### Comment mettre en œuvre cela efficacement?
 
 Culture est clé. Cela ne fonctionne pas sans une communication et une confiance ouvertes. Cela ne fonctionne qu'avec un effort collectif. DevSecOps devraient viser à combler les lacunes de connaissances en sécurité entre les équipes; pour que chacun pense et soit responsable de la sécurité, ils ont d'abord besoin des outils et des connaissances pour conduire cette autonomie efficacement et en toute confiance.
 
-DevSecOps Défis
+### DevSecOps Défis
 
 **Sécurité Silos**
 
