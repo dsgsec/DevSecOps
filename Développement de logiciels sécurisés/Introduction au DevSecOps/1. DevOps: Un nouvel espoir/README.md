@@ -16,7 +16,7 @@ Si quelque chose dérange les serveurs ou quelque chose a besoin de déploiement
 
 Cette stratégie et ce système populaires de résolution de problèmes sont devenus une cause profonde d'inefficacité dans la flexibilité et la communication entre les équipes.
 
-**Modèle Agile
+**Modèle Agile**
 
 Avec les défis auxquels les équipes étaient confrontées, les entreprises ont commencé à développer des moyens qui permettaient plus de flexibilité et d'adaptabilité. Quelque part au début de 2000,  **La Méthodologie Agile **a été inventé. Bientôt, un manifeste a été publié: [Agile Manifeste](http://agilemanifesto.org/), en soulignant quatre valeurs pour le développement agile:
 
