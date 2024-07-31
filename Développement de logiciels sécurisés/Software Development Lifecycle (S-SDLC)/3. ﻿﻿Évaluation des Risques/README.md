@@ -24,7 +24,7 @@ C'est le type le plus courant d'Évaluation des Risques que vous trouverez dans 
 
 "Sévérité" est l'impact de la conséquence, et la probabilité est la probabilité que cela se produise. Il appartient à l'évaluateur des risques de juger de ces circonstances.^
 
-**Évaluation Quantitative des Risques  **
+**Évaluation Quantitative des Risques **
 
 L'Évaluation Quantitative des Risques est utilisée pour mesurer les risques avec des valeurs numériques. Au lieu de "Basse", "Moyenne", et "Haute", vous auriez des nombres qui représentent ces bandes. Lors de la réalisation de l'Analyse Quantitative des Risques, nous pouvons utiliser des outils pour déterminer la Gravité et la Probabilité ou des séries personnalisées de calculs basés sur les processus de l'entreprise.
 
