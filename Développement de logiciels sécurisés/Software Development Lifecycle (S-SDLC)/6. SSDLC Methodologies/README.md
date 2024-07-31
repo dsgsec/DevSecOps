@@ -1,0 +1,129 @@
+SSDLC Méthodologies
+----------------------
+
+Vous pouvez suivre différentes méthodologies pour intégrer la sécurité dans SDLC meilleur. Avant de nous plonger dans chaque méthode, quelle que soit la méthodologie de développement choisie (Agile, DevOps, Cascade extrême, etc.), il est nécessaire de:
+
+-   Construire en pensant à la sécurité
+
+-   Introduire des tests axés sur la sécurité
+
+Il existe plusieurs méthodologies pour SDLC; quelques exemples de méthodologies largement utilisées sont:
+
+-   Le cycle de vie de Microsoft Security Development (SDL')
+
+-   OWASP Secure Software Development Life Cycle Project (S-S-BSDLC')
+
+-   Logiciels Sécurité Touchpoints
+
+Microsoft SDL
+
+#### SDL principes:
+
+-   Secure by Design: Security est un attribut qualité intégré affectant l'ensemble du cycle de vie du logiciel.
+
+-   Sécurité par défaut: Les systèmes logiciels sont conçus pour minimiser les dommages potentiels causés par des attaquants, par exemple, les logiciels sont déployés avec le moins de privilèges nécessaires.
+
+-   Secure in Deployment: le déploiement de logiciels s'accompagne d'outils et de conseils destinés aux utilisateurs et aux administrateurs.
+
+-   Communications: les développeurs de logiciels sont préparés aux menaces en communiquant ouvertement et en temps opportun avec les utilisateurs et les administrateurs
+
+SDL est une collection d'activités de sécurité obligatoires regroupées par les phases de cycle de vie de développement de logiciels traditionnels. Des données sont recueillies pour évaluer l'efficacité de la formation. Les mesures en cours de processus sont utilisées pour confirmer la conformité du processus. Les mesures post-libération sont utilisées pour guider les changements futurs. SDL met fortement l'accent sur la compréhension de la cause et de l'effet des vulnérabilités de sécurité. Une équipe de développement doit effectuer les activités de sécurité obligatoires pour se conformer à Microsoft SDL processus. Vous pouvez mettre en œuvre SDL en suivant ces pratiques:
+
+| **Pratique** | **Pourquoi?** |
+|
+
+### **Fournir une Formation**
+
+ |
+
+Les ingénieurs, les responsables de programmes et de produits doivent comprendre les bases de la sécurité et savoir comment intégrer la sécurité dans les logiciels et les services pour sécuriser les produits tout en répondant aux besoins métier et en offrant une valeur utilisateur.
+
+Une formation pratique viendra compléter et renforcer les politiques de sécurité, SDL pratiques, normes et exigences en matière de sécurité logicielle et être guidé par des informations dérivées des données ou des capacités techniques nouvellement disponibles.
+
+ |
+|
+
+### **Définir les Exigences de Sécurité**
+
+ | La prise en compte de la sécurité et de la confidentialité est un aspect fondamental du développement d'applications et de systèmes hautement sécurisés. Quelle que soit la méthodologie de développement utilisée, doit continuellement mettre à jour les exigences de sécurité pour refléter les changements dans les fonctionnalités requises et les changements dans le paysage des menaces.\
+ |
+|
+
+### Définir les Métriques et les Rapports de Conformité 
+
+ | Il est essentiel de définir les niveaux minimaux acceptables de qualité de la sécurité et de tenir les équipes d'ingénierie responsables du respect de ces critères. La définition précoce de ceux-ci aide une équipe à comprendre les risques associés aux problèmes de sécurité, à identifier et corriger les défauts de sécurité pendant le développement et à appliquer les normes tout au long du projet.\
+ |
+|
+
+### Effectuer la Modélisation des Menaces
+
+ |
+
+Cette pratique permet aux équipes de développement d'examiner, de documenter et de discuter des implications de sécurité des conceptions dans leur environnement opérationnel planifié et de manière structurée.
+
+L'application d'une approche structurée aux scénarios de menaces aide une équipe à identifier plus efficacement et moins cher les vulnérabilités de sécurité, à déterminer les risques liés à ces menaces, à sélectionner les fonctionnalités de sécurité et à établir des mesures d'atténuation appropriées.
+
+ |
+|
+
+### Établir les Exigences de Conception
+
+ | Le SDL est généralement considéré comme des activités d'assurance qui aident les ingénieurs à mettre en œuvre des "caractéristiques sécurisées", en ce sens que les fonctionnalités sont bien conçues en matière de sécurité. Les ingénieurs s'appuieront normalement sur des fonctionnalités de sécurité, telles que la cryptographie, l'authentification, la journalisation, etc. Dans de nombreux cas, la sélection ou la mise en œuvre de fonctionnalités de sécurité s'est avérée si compliquée que les choix de conception ou de mise en œuvre sont susceptibles d'entraîner des vulnérabilités. Par conséquent, il est essentiel de les appliquer de manière cohérente et avec une compréhension cohérente de leur protection.\
+ |
+|
+
+### Définir et Utiliser les Normes de Cryptographie
+
+ | Il est essentiel de veiller à ce que toutes les données, y compris les informations sensibles à la sécurité et les données de gestion et de contrôle, soient protégées contre toute divulgation ou altération involontaire lors de leur transmission ou de leur stockage. Le cryptage est généralement utilisé pour y parvenir. Par exemple., n'utilisez que des bibliothèques de chiffrement conformes à l'industrie et assurez-vous qu'elles sont mises en œuvre pour pouvoir être facilement remplacées si nécessaire.\
+ |
+|
+
+### Gérer le Risque de Sécurité lié à l'Utilisation de Composants Tiers
+
+ |
+
+Lors de la sélection de composants tiers à utiliser, il est essentiel de comprendre l'impact d'une vulnérabilité de sécurité sur la sécurité du système plus étendu dans lequel ils sont intégrés. Avoir un inventaire précis des composants tiers et un plan pour répondre lorsque de nouvelles vulnérabilités sont découvertes contribuera grandement à atténuer ce risque.
+
+ |
+| **Utiliser les Outils Approuvés\
+** | Définir et publier une liste d'outils approuvés et leurs contrôles de sécurité associés, tels que les options de compilateur/linker et les avertissements. Les ingénieurs doivent s'efforcer d'utiliser la dernière version des outils approuvés, tels que les versions de compilateur, et tirer parti des nouvelles fonctionnalités et protections d'analyse de sécurité.\
+ |
+|
+
+### **Effectuer des Tests de Sécurité (SAST, DAST, GRINCE')**
+
+ | L'analyse du code source avant la compilation fournit une méthode hautement évolutive d'examen du code de sécurité et permet de s'assurer que les politiques de codage sécurisé sont suivies. Il en va de même pour pla vérification erratique de votre logiciel entièrement compilé ou empaqueté vérifie la fonctionnalité qui n'est apparente que lorsque tous les composants sont intégrés et en cours d'exécution.\
+ |
+|
+
+### **Effectuer des Évaluations de Sécurité: Évaluation de Vulnérabilité & Tests de Pénétration**
+
+ | L'objectif d'un test d'intrusion est de découvrir les vulnérabilités potentielles résultant d'erreurs de codage, de défauts de configuration du système ou d'autres faiblesses de déploiement opérationnel. En tant que tel, le test trouve généralement la plus grande variété de vulnérabilités.\
+ |
+|
+
+### Établir un Processus Standard de Réponse aux Incidents 
+
+ | La préparation d'un Plan d'intervention en cas d'incident est cruciale pour aider à faire face aux nouvelles menaces qui peuvent émerger au fil du temps. Le plan devrait inclure les personnes à contacter en cas d'urgence de sécurité et établir le protocole pour les services de sécurité, y compris les méthodes pour le code hérité d'autres groupes au sein de l'organisation et pour le code tiers.  |
+
+S-S-d'OWASPSDLC
+
+#### S-SDLC Principes
+
+-   SDL est une collection d'activités de sécurité obligatoires regroupées par les phases de cycle de vie de développement de logiciels traditionnels.
+
+-   Des données sont recueillies pour évaluer l'efficacité de la formation.
+
+-   Les mesures en cours de processus sont utilisées pour confirmer la conformité du processus.
+
+-   Les mesures post-libération sont utilisées pour guider les changements futurs.
+
+-   SDL met fortement l'accent sur la compréhension de la cause et de l'effet des vulnérabilités de sécurité.
+
+-   Une équipe de développement doit effectuer les seize activités de sécurité obligatoires pour se conformer à Microsoft SDL processus.
+
+![1e76d9be1c116a8d68925162aa3b01f0](https://github.com/user-attachments/assets/5321e0e9-fa9f-4b4c-8bc9-e844f5e58a0d)
+
+OWASP S-SDLC vise à construire des "portes de qualité de sécurité", pour soutenir la qualité et sécuriser les logiciels fabriqués tout au long du pipeline. Cela se fait en suivant une approche Agile Security, où les sprints sont dédiés à la sécurité. Des exemples de Sprints peuvent inclure: Révisions de code, authentification, autorisation, validation des entrées et évaluation des risques techniques tels que les injections de code. Les portes comprennent des sprints axés sur des blocs de construction similaires à ceux de Microsoft SDL. L'approche Agile S-SDLC d'OWASP est fortement influencée et basée sur une approche "Maturity Model", en particulier OWASP SAMM. Le Software Assurance Maturity Model (SAMM) est un cadre ouvert pour aider les organisations à formuler et mettre en œuvre une stratégie de sécurité logicielle adaptée aux risques spécifiques de l'organisation. Il aide à évaluer une organisation's les pratiques de sécurité logicielle existantes, créer un programme d'assurance de la sécurité logicielle, démontrer les améliorations apportées à ce programme et définir et mesurer les activités de sécurité pour une organisation. SAMM aide à expliquer les objectifs, les actions, les résultats, les indicateurs de succès, les coûts, etc. Un exemple serait un tableau de bord de sécurité pour l'analyse des écarts, par exemple, dans un domaine particulier, comme la protection des points de terminaison. Il vise à répondre "À quel point faisons-nous et où voulons-nous aller?". Dans quelle mesure allons-nous bien et où voulons-nous aller?". Dans quelle mesure allons-nous bien et où voulons-nous aller?". [OWASP SAMM lien](https://owasp.org/www-project-samm/)
+
+Un autre modèle de sécurité critique est le Building Security In Maturity Model (BSIMM). BSIMM est une étude des initiatives de sécurité logicielle du monde réel et reflète l'état actuel de la sécurité logicielle. BSIMM peut être décrit comme un "bâton de mesure" pour comprendre votre posture de sécurité en fournissant une comparaison des états de sécurité d'autres entreprises. En d'autres termes, il ne vous dit pas ce que vous devez faire, mais plutôt ce que vous faites mal. Des centaines d'organisations sont impliquées.[BSIMM](https://owaspsamm.org/blog/2020/10/29/comparing-bsimm-and-samm/)[ lien](https://owaspsamm.org/blog/2020/10/29/comparing-bsimm-and-samm/)
