@@ -22,7 +22,7 @@ Branching est une caractéristique commune dans la plupart des systèmes de cont
 
 Pour comprendre Git's modèle de branchement, it's essentiel de savoir comment Git stocke ses données. Git ne stocke pas les changements ou les différences; au lieu de cela, il conserve des instantanés du contenu. Lorsque vous faites un commit in Git, il crée un objet commit qui inclut un pointeur vers l'instantané du contenu, ainsi que des informations telles que les détails de l'auteur, le message commit et le parent commit(s) pointeur(s).
 
-https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/cad159ab5dec96d6b750615de453a871.png
+![cad159ab5dec96d6b750615de453a871](https://github.com/user-attachments/assets/5e24ebd3-5b8c-4c3d-820b-df5365a9990f)
 
 **Branchement:**
 
