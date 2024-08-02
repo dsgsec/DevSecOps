@@ -1,5 +1,6 @@
 SAST est l'un des premiers outils à apparaître pendant le cycle de développement. Il est souvent mis en œuvre pendant la phase de codage, car il n'est pas nécessaire d'avoir une application fonctionnelle pour l'utiliser.
 
+![8d4c2f1e6b6b61d8e13d8e0c4597773e](https://github.com/user-attachments/assets/70f751bb-1059-43a8-a552-4e146711bad4)
 
 Selon chaque cas, SAST peut être mis en œuvre de l'une des manières suivantes:
 
@@ -20,15 +21,15 @@ Votre machine virtuelle a l'éditeur de code VS installé et déjà configuré p
 
 Les deux outils fonctionneront de la même manière en affichant tous les problèmes détectés directement en ligne dans votre code. La seule différence notable est que Semgrep fonctionnera lorsque vous démarrez VS Code et vous montrera les problèmes qu'il détecte sur tous les fichiers, alors que Psalm ne vous montrera que les problèmes liés au fichier que vous modifiez actuellement. Les plugins ajouteront les informations suivantes à votre écran IDE:
 
-![SAST dans VS Code](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/0409daf7cdf144dfaa3e9f1e4ab2fcb9.png)
+![0409daf7cdf144dfaa3e9f1e4ab2fcb9](https://github.com/user-attachments/assets/e59dc0ad-f4ed-476c-8b19-fd5a24198eaa)
 
 Pour chaque ligne où des problèmes sont détectés, vous pouvez obtenir des informations supplémentaires en passant le pointeur de la souris dessus. Voici ce que vous obtiendrez en survolant la ligne 46 de `login.php`:
 
-![Problèmes d'intégration dans VS Code](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/9b3cd323e1ef63bac1c9dab83171827f.png)
+![9b3cd323e1ef63bac1c9dab83171827f](https://github.com/user-attachments/assets/840ceeb2-0ca1-40f0-8eb2-25f6f1fb1901)
 
 Vous pouvez également consulter la liste complète des problèmes en cliquant sur l'indicateur Erreurs en bas de l'écran de VS Code:
 
-![Problèmes Panel](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/a879e9d06f657dbfd45dcc874dc3c91f.png)
+![a879e9d06f657dbfd45dcc874dc3c91f](https://github.com/user-attachments/assets/9b312430-c863-40f9-9226-2a265281929c)
 
 Avoir votre IDE vérifier les problèmes vous permet de produire du code plus propre en tant que développeur, contribuant de manière significative à la sécurité globale de votre application finale.
 
