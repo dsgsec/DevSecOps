@@ -1,0 +1,17 @@
+Les dépendances internes sont toutes les bibliothèques ou SDK que nous avons développés en interne dans notre organisation. En tant que tel, nous sommes responsables de tous les aspects de la sécurité de la dépendance et de sa gestion. Comme mentionné précédemment, la principale raison de créer des dépendances internes est de s'assurer que nous n'avons pas à réinventer la roue chaque fois que nous développons une application. Les dépendances internes nous permettent de standardiser certains processus, tels que l'authentification, l'enregistrement et la communication.
+
+Préoccupations de Sécurité
+
+Les dépendances internes ont des problèmes de sécurité similaires à ceux des dépendances externes. Bien que les dépendances internes nous permettent de standardiser un processus, si la dépendance a une vulnérabilité, elle affectera plusieurs applications différentes dans l'organisation. Nous devons donc effectuer des tests de sécurité de nos dépendances avant qu'elles ne soient mises à disposition.
+
+Un autre problème est que les dépendances internes peuvent devenir un code hérité incroyablement rapide. Le développeur qui a créé et maintenu une dépendance a commencé à travailler ailleurs, ce qui signifie que la dépendance ne reçoit plus de mises à jour. Si une telle dépendance est utilisée dans plusieurs applications, cela peut devenir un problème si une vulnérabilité est découverte. Ce problème ne peut être aggravé que si la documentation n'est pas tenue à jour, ce qui permet à quelqu'un de nouveau d'assumer la responsabilité de la dépendance.
+
+Un problème de sécurité unique pour les dépendances internes est le stockage. Nous voulons nous assurer qu'une dépendance peut être accédée par tous les développeurs pour une utilisation, mais pas une modification. Si tous les développeurs peuvent simplement modifier la dépendance, un attaquant devrait simplement compromettre un seul développeur pour compromettre plusieurs applications. Par conséquent, nous devons protéger l'accès en écriture aux dépendances. Dans certaines organisations, même l'accès en lecture est restreint pour réduire davantage la surface d'attaque.
+
+Outils
+
+Les applications et les outils doivent être utilisés pour gérer efficacement les dépendances internes. Ces outils seraient différents en fonction de nos besoins. Si nous développons du code uniquement dans un seul langage tel que Python, nous pourrions simplement héberger un serveur de référentiel PyPi interne. Cela nous permettrait de télécharger et d'installer des paquets similaires à la façon dont ils sont exécutés à l'aide de pip et du référentiel PyPi connecté à Internet.
+
+However, if we develop applications in different languages, we may opt to use a dependency manager such as [JFrog Artifactory](https://jfrog.com/artifactory/). JFrog Artifactory allows dependencies to be centrally managed and integrated into the DevOps pipeline. As developers are writing code, they can make use of the various dependencies hosted on Artifactory. Artifactory also has the ability to manage external dependencies that are used internally as well. It provides a single source for all dependencies.
+
+While such tools are great to help us manage dependencies internally, if they are compromised, it would lead to a significant impact. One such attack that can be performed against dependency managers is Dependency Confusion, which will be discussed in more detail in the next task.
